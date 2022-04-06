@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.jacky.spring5.User"></bean>
+
+    <!--使用set方法-->
+    <bean id="book" class="com.jacky.spring5.Book">
+        <!--使用property完成属性注入-->
+        <property name="bName" value="易筋经"></property>
+        <property name="bAuthor" value="达摩"></property>
+        <property name="address"><value><![CDATA[<<南京>>]]></value></property>
+    </bean>
+
+    <!--使用有参数构造器方法-->
+    <bean id="orders" class="com.jacky.spring5.Orders">
+        <constructor-arg name="oName" value="Computer"></constructor-arg>
+        <constructor-arg name="address" value="China"></constructor-arg>
+    </bean>
+</beans>
