@@ -7,7 +7,23 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
 
+    <util:list id="bookList">
+        <value>易筋经</value>
+        <value>九阳真经</value>
+        <value>九阳神功</value>
+    </util:list>
 
+    <!--
+    关于bean的作用域
+    scope 有两个值
+    singleton  单实例  加载spring配置文件时，就会创建单实例对象
+    prototype  多实例  只是在getBean方法时，才会创建对应的对象
+    request
+    session
+    -->
 
+    <bean id="book" class="com.jacky.spring5.collectiontype.Book" scope="prototype">
+        <property name="list" ref="bookList"></property>
+    </bean>
 
 </beans>

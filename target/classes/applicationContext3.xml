@@ -4,18 +4,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="emp" class="com.jacky.spring5.bean.Emp">
+    <bean id="emp" class="com.jacky.spring5.bean1.Emp">
         <property name="ename" value="lucy"></property>
         <property name="gender" value="女"></property>
 <!--        <property name="dept">-->
-<!--            <bean id="dept" class="com.jacky.spring5.bean.Dept">-->
+<!--            <bean id="dept" class="com.jacky.spring5.bean1.Dept">-->
 <!--                <property name="dname" value="保安部"></property>-->
 <!--            </bean>-->
 <!--        </property>-->
         <property name="dept" ref="dept"></property>
     </bean>
 
-    <bean id="dept" class="com.jacky.spring5.bean.Dept">
+    <bean id="dept" class="com.jacky.spring5.bean1.Dept">
         <property name="dname" value="研发中心"></property>
     </bean>
 

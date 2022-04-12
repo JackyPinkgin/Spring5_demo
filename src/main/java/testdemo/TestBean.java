@@ -1,6 +1,6 @@
 package testdemo;
 
-import com.jacky.spring5.bean.Emp;
+import com.jacky.spring5.bean1.Emp;
 import com.jacky.spring5.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;

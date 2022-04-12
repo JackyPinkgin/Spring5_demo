@@ -1,4 +1,4 @@
-package com.jacky.spring5.bean;
+package com.jacky.spring5.bean1;
 
 /**
  * 2022/4/2
